@@ -122,6 +122,7 @@ int main(int argc, const char * argv[]) {
     printf("%f\n", Exp / sqrt(2 * Pi));
     
     close(fd);
+    remove(tempfile);
     unlink(tempfile);
     return 0;
 }
